@@ -1,16 +1,16 @@
-## Micronaut 3.0.0-M5 Documentation
+# Micronaut Kafka Graal #
 
-- [User Guide](https://docs.micronaut.io/3.0.0-M5/guide/index.html)
-- [API Reference](https://docs.micronaut.io/3.0.0-M5/api/index.html)
-- [Configuration Reference](https://docs.micronaut.io/3.0.0-M5/guide/configurationreference.html)
-- [Micronaut Guides](https://guides.micronaut.io/index.html)
----
+Test application for Micronaut and Kafka:
 
-## Feature http-client documentation
+Start Kafka (without Zookeeper):
 
-- [Micronaut HTTP Client documentation](https://docs.micronaut.io/latest/guide/index.html#httpClient)
+```
+docker run -it --rm -p 9092:9092 bashj79/kafka-kraft
+```
 
-## Feature kafka documentation
+To test the application:
 
-- [Micronaut Kafka Messaging documentation](https://micronaut-projects.github.io/micronaut-kafka/latest/guide/index.html)
-
+```
+curl localhost:8080/books/1491950358
+curl localhost:8080/analytics
+```
