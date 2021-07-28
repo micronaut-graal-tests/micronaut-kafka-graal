@@ -3,4 +3,4 @@ micronaut:
     name: kafka
 kafka:
   bootstrap:
-    servers: localhost:9092
+    servers: ${KAFKA_SERVER:`localhost:9092`}
