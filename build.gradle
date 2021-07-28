@@ -42,3 +42,6 @@ java {
     targetCompatibility = JavaVersion.toVersion("1.8")
 }
 
+nativeImage {
+    imageName("kafka")
+}
