@@ -5,7 +5,7 @@ Test application for Micronaut and Kafka:
 Start Kafka (without Zookeeper):
 
 ```
-docker run -it --rm -p 9092:9092 bashj79/kafka-kraft
+docker run -it --rm -p 9092:9092 -p 2121:2121 -p 3030:3030 lensesio/fast-data-dev
 ```
 
 To test the application:
