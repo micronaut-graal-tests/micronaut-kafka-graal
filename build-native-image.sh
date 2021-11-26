@@ -1,4 +1,4 @@
 #!/bin/bash
 
-./gradlew nativeImage
-cp build/native-image/kafka .
+./gradlew nativeCompile
+cp build/native/nativeCompile/kafka .
